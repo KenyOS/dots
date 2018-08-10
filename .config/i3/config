@@ -17,7 +17,7 @@ font pango:monospace 8
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-#font pango:DejaVu Sans Mono 8
+font pango:DejaVu Sans Mono 8
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -29,8 +29,17 @@ font pango:monospace 8
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+#======          =======#
+#=====  SHORTCUTS ======#
+#======          =======#
+
+#====== Ranger ======#
+bindsym $mod+alt+F workspace $WS3; exec ranger
 # Start Urxvt + Tmux
 bindsym $mod+Return workspace $WS1; exec urxvt -e tmux
+
+#====== Lock Session ======#
+bindsym $mod+l exec i3lock-fancy -f noto-sans
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -45,7 +54,7 @@ bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='rofi -dmenu'
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
-bindsym $mod+l focus up
+#bindsym $mod+l focus up
 bindsym $mod+semicolon focus right
 
 # alternatively, you can use the cursor keys:
@@ -153,7 +162,7 @@ exec --no-startup-ic xcompmgr -c -t-5 -l-5 -r4.2 -o.55
 #exec --no-startup-id numlockx on
 #
 ##       Auto locker
-exec xautolock -time 10 -locker i3lock-fancy
+#exec xautolock -time 10 -locker i3lock-fancy
 #
 ##       Conky
 #exec conky -d; sleep 1 && transset-df .5 -n Conky &
