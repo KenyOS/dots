@@ -36,7 +36,7 @@ URxvt*scrollBar_right:   false
 
 URxvt*transparent:       false
 
-URxvt.font: xft:Courier Prime Cod:pixelsize=12
+URxvt.font: xft:FuraMono Nerd Fon:pixelsize=12
 URxvt.letterSpace: 0
 
 *antialias:  false
