@@ -1,0 +1,79 @@
+Algoritmo "CALCULOAREA"
+// Disciplina  :  [Linguagem e Lógica de Programação] 
+// Professor   : Sérgio Ricardo Rota
+// Descrição   : Cálcula a área de diferentes formas geométricas
+// Autor(a)    : Keny
+// Data atual  : 06/03/2018
+Var
+// Seção de Declarações das variáveis 
+opcao : caractere
+l, h, b, bmaior, bmenor, dmenor, dmaior, r : real
+area : real
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+Repita
+Limpatela
+Escreval("Digite (Q) para Quadrado.")
+Escreval("Digite (R) para Retângulo.")
+Escreval("Digite (T) para Triângulo.")
+Escreval("Digite (P) para Trapézio.")
+Escreval("Digite (L) para Losango.")
+Escreval("Digite (C) para Círculo.")
+Escreval("Digite (X) para Sair.")
+Escreval()
+Leia(opcao)
+escolha opcao
+  caso "Q"
+    Escreva("Digite o lado do quadrado: ")
+    Leia(1)
+    area := 1^2
+    Escreval("A área do quadrado é: ", area)
+  caso "R"
+    Escreva("Digite a base do retângulo: ")
+    Leia(b)
+    Escreva("Digite a altura do retângulo: ")
+    Leia(h)
+    area := b * h
+    Escreval("A área do retângulo é: ". area)
+  caso "T"
+    Escreva("Digite a base do triângulo.")
+    Leia(b)
+    Escreva("Digite a altura do triângulo.")
+    Leia(h)
+    area := (b * h) / 2
+    Escreval("A área do Triângulo é: ", area)
+  caso "P"
+    Escreva("Digite a base maior do Trapézio.")
+    Leia(bmaior)
+    Escreva("Digite a base menor do Trapézio.")
+    Leia(bmenor)
+    Escreva("Digite a altura do Trapézio.")
+    Leia(h)
+    area := ((bmaior + bmenor) / 2) * h
+    Escreval("A área do Trapézio é: ", area)
+  caso "L"
+    Escreva("Digite a Diagonal menor do Losango.")
+    Leia(dmenor)
+    Escreva("Digite a Diagonal maior do Losango.")
+    Leia(dmaior)
+    area := (dmenor * dmaior) / 2
+    Escreval("A área do Losango é: ", area)
+  caso "C"
+    Escreva("Digite o raio do Círculo.")
+    Leia(r)
+    area := pi * (r ^ 2)
+    Escreval("A área do Círculo é: ", area)
+    caso "X"
+  outrocaso    // - NDA -
+    Escreval("Opção INVÁLIDA!")
+  
+fimescolha
+   se opcao <> "X" entao
+      Escreval("")
+      Escreva("Pressione <Enter> para continuar...")
+      Escreval("")
+      Leia(Enter)
+   fimse
+   ate (opcao ="X")
+Fimalgoritmo

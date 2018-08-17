@@ -1,0 +1,58 @@
+Algoritmo "semnome"
+// Disciplina  :  [Linguagem e Lógica de Programação] 
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 23/03/2018
+Var
+// Seção de Declarações das variáveis 
+x, y, soma: inteiro
+raiz: real
+opcao: caractere
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+Repita
+Escreval("Menu")
+Escreval()
+Escreval("Digite uma das letras para um tipo de Operação")
+Escreval("Letra 'S' para somar dois números")
+Escreval("Letra 'R' para raiz quadrada de um número")
+Escreval("Letra 'X' para SAIR")
+Escreval()
+Escreva()
+Leia(opcao)
+escolha opcao
+  caso "S"
+  soma <- 0
+  Escreva("Digite um número para a SOMA, ou Digite 0 para SAIR: ")
+  Leia(x)
+  enquanto (x <> 0) faca
+  soma <- soma + x
+
+  Escreval("Digite 0 para sair")
+  Escreva("Digite um número para a SOMA, ou Digite 0 para SAIR: ")
+  Leia(x)
+
+  fimenquanto
+  Escreval("Soma final é", soma)
+  
+  caso "R"
+  Escreva("Digite um número para aplicar em uma Raiz Quadrada: ")
+  Leia(y)
+  enquanto (y <> 0) faca
+
+  raiz <- RaizQ(y)
+  
+  Escreval("Resultado da Raiz de", y, " é: ", raiz)
+  Escreval()
+  
+  Escreva("Digite um número para aplicar em uma Raiz Quadrada: ")
+  Leia(y)
+  fimenquanto
+  caso "X"
+  outrocaso
+  Escreval("Opção Inválida.")
+fimescolha
+ate (opcao ="X")
+Fimalgoritmo

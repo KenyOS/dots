@@ -36,13 +36,13 @@ URxvt*scrollBar_right:   false
 
 URxvt*transparent:       false
 
-URxvt.font: xft:FuraMono Nerd Fon:pixelsize=12
+URxvt.font: xft:SauceCodePro Nerd Font Mono:pixelsize=12
 URxvt.letterSpace: 0
 
-*antialias:  false
+*antialias:  true
 *autohint:   false
 
-URxvt.perl-ext-common: default,matcher
-URxvt.url-launcher: Browser?
+URxvt.perl-ext-common: default,matcher,clipboard,config-reload
+URxvt.url-launcher: firefox-nightly
 URxvt.matcher.button: 1
 

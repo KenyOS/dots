@@ -1,0 +1,130 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #fff;
+	font-family: Arial;
+}
+
+#cabecalho {
+	width: 90%;
+	min-height: 150px;
+	margin: 0 auto;
+	/*background: #f00; */
+	text-align: center;
+}
+#menu {
+	width: 90%;
+	min-height: 50px;
+	/* background: #00f; */
+	margin: 0 auto;
+}
+
+#menu ul {
+	list-style-type: none;
+}
+#menu ul li {
+	font-family: Arial;
+	display: inline-block;
+	line-height: 50px;
+	padding: 0px 10px 0px 10px;
+}
+
+#menu a {
+	color: #000;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#menu a:hover{
+	color: #0ba39c;
+}
+#publicidade {
+	width: 90%;
+	min-height: 400px;
+	margin: 0 auto;
+	background: url(../images/the-beacon.jpg) no-repeat;
+	background-size: cover;
+	
+}
+#conteudo {
+	width: 60%;
+	min-height: 200px;
+	/*background: #f0f; */
+	float: right;
+}
+#conteudo h2 {
+	margin-top: 50px;
+}
+.fundoBranco {
+	background: #fff;
+	color: #333;
+	padding: 10px 100px 10px 10px;
+	margin-top: 50px;
+}
+#conteudo p {
+	margin-top: 30px;
+}
+#conteudo p span {
+	background: #000;
+	color: #fff;
+	padding: 10px;
+	line-height: 20px;
+}
+
+#conteudo p:firt-child {
+	margin-top: 70px;
+}
+
+.leiaMais {
+	background: #0ba39c;
+	color: #fff;
+	margin-top: 30px;
+	text-decoration: none;
+	text-transform: capitalize;
+	padding: 10px;
+}
+#destaques {
+	width: 90%;
+	min-height: 300px;
+	margin: 0 auto;
+	/* background: #0f0; */
+	text-align: center;
+}
+#destaques ul {
+	list-style-type: none;
+}
+#destaques ul li {
+	display: inline-block;
+	padding: 20px;
+}
+#destaques img {
+	border: #000 solid 1px;
+}
+#destaques h3 {
+	margin-top: 10px;
+}
+#me
+#rodape {
+	width: 90%;
+	min-height: 100px;
+	min-height: 100px;
+	margin: 0 auto;
+	background: #000;
+}
+#direito , #esquerdo {
+	width: 50%;
+	min-height: 100px;
+	line-height: 100px;
+	float: left;
+	text-align: center;
+	color: #fff;
+}
+#direito {
+	background: #0f0;
+	
+}
+#esquerdo {
+	background: #f00;
+	
+}

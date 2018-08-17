@@ -1,0 +1,29 @@
+import java.util.Scanner;
+	
+public class Ex1 
+{
+
+	public static void main(String[] args) 
+	{
+    Scanner reader;
+    int x, y, z;
+    int result;
+    
+    reader = new Scanner(System.in);  //Leitura em System.in
+	System.out.println("Enter the first number: ");
+	x = reader.nextInt();
+	System.out.println("Enter the second number: ");
+	y = reader.nextInt();
+	System.out.println("Enter the third number: ");
+	z = reader.nextInt();
+	
+	result = x + y + z;
+	
+	System.out.print("The result of this sum is: " + result);
+	
+	reader.close();
+     
+
+	}
+
+}

@@ -1,0 +1,47 @@
+import java.util.Scanner;
+public class ex5 {
+
+	public static void main(String[] args) {
+		Scanner reader;
+		
+		int a, b, c;
+		boolean x, y, z;
+		
+		 reader = new Scanner(System.in);
+			System.out.println("Enter the number of A: ");
+			a = reader.nextInt();
+			System.out.println("Enter the number of B: ");
+			b = reader.nextInt();
+			System.out.println("Enter the number of C: ");
+			c = reader.nextInt();
+    
+			//Condição do Triangulo
+			x = Math.abs(b-c) < a && a < b+c;
+			System.out.println(x);
+			
+			y = Math.abs(a-c) < b && b < a+c;
+			System.out.println(y);
+			
+			z = Math.abs(b-c) < a && a < b+c;
+			System.out.println(z);
+			
+			//Definir a forma do Triangulo
+			
+			if (x && y && z);
+			{
+				if (a == b && b == c);
+				{
+					System.out.println("Triângulo é Isosceles");
+				}
+				else
+				{
+					
+				}
+			}
+			else
+			{
+			System.out.println("Não é um triangulo");
+			}
+	}
+
+}

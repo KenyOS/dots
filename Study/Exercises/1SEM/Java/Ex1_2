@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class Ex1_2 
+{
+
+	public static void main(String[] args) 
+	{
+		double x, y;
+		
+		Scanner reader;
+		
+		reader = new Scanner(System.in);
+		System.out.print("Enter a number: ");
+		x = reader.nextDouble();
+		
+		System.out.print("Enter a number: ");
+		y = reader.nextDouble();
+		
+		
+		System.out.println("Média: " +(x+y) / 2);
+		
+		
+		
+		
+		reader.close();
+		// TODO Auto-generated method stub
+		
+	}
+
+}

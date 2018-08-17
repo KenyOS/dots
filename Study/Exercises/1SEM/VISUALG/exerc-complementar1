@@ -1,0 +1,33 @@
+Algoritmo "exercicio complementar 1"
+// Disciplina  :  [Linguagem e Lógica de Programação] 
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Exercício 1: "Determinar se um número é par ou ímpar e
+// positivo ou negativo
+// Autor(a)    : Keny
+// Data atual  : 09/03/2018
+Var
+// Seção de Declarações das variáveis 
+x : inteiro
+y : real
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+Escreva("Digite um número ")
+  leia(x)
+//Determinar se o valor de x é impar ou par
+ y <- x % 2
+ se y=0 entao
+   se x<0 entao
+   Escreval("O valor de", x, " é par e negativo.")
+   senao
+   Escreval("O valor de", x, " é par e positivo.")
+   fimse
+ senao
+   se x<0 entao
+   Escreval("O valor de", x, " é impar e negativo.")
+   senao
+   Escreval("O valor de", x, " é impar e positivo.")
+   fimse
+ fimse
+
+Fimalgoritmo
