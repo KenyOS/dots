@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8"/>
+	<title>Paisagem Top D+</title>
+	</head>
+<body>
+	<canvas id="minha-tela" width="800" height="400" style="border: #F00 solid 1px;"> </canvas>  
+	<script>  
+		var canvas = document.getElementById('minha-tela'); 
+		var ctx = canvas.getContext('2d');
+		//Circulos das flores
+		ctx.beginPath();
+		ctx.fillStyle = '#F0F';
+		ctx.arc(625, 225, 25, 0, 360*Math.PI/180, true);
+		ctx.fill();
+
+		ctx.beginPath();
+		ctx.fillStyle = '#F0F';
+		ctx.arc(625, 275, 25, 0, 360*Math.PI/180, true);
+		ctx.fill();
+
+		ctx.beginPath();
+		ctx.fillStyle = '#F0F';
+		ctx.arc(575, 275, 25, 0, 360*Math.PI/180, true);
+		ctx.fill();
+
+		ctx.beginPath();
+		ctx.fillStyle = '#F0F';
+		ctx.arc(575, 225, 25, 0, 360*Math.PI/180, true);
+		ctx.fill();
+
+		ctx.beginPath();
+		ctx.fillStyle = '#FF0';
+		ctx.arc(600, 250, 25, 0, 360*Math.PI/180, true);
+		ctx.fill();
+
+		//Cabo da Flor
+
+		ctx.beginPath();
+		ctx.strokeStyle = '#0F0';
+		ctx.lineWidth = 5;
+		ctx.moveTo(600, 275);
+		ctx.lineTo(600,400);
+		ctx.stroke();
+
+
+		ctx.beginPath();
+		ctx.strokeStyle = '#0F0';
+		ctx.lineWidth = 2;
+		ctx.moveTo(640, 540);
+		ctx.lineTo(575,320);
+		ctx.stroke();
+
+		ctx.beginPath();
+		ctx.strokeStyle = '#0F0';
+		ctx.lineWidth = 2;
+		ctx.moveTo(560, 540);
+		ctx.lineTo(625,320);
+		ctx.stroke();
+
+		//Rose
+		ctx.beginPath();
+		ctx.strokeStyle = '#0F0';
+		ctx.lineWidth = 4;
+		ctx.moveTo(500, 300);
+		ctx.lineTo(500,500);
+
+		//CASA
+		//BASE
+		ctx.beginPath();
+		ctx.strokeStyle = '#F00';
+		ctx.fillStyle = '#FF0';
+		ctx.lineWidth = 2;
+		ctx.fillRect(100, 200, 200, 200);
+		
+		
+		//TELHA
+		ctx.beginPath();
+		ctx.strokeStyle = '#0F0';
+		ctx.fillStyle = '#F00';
+		ctx.lineWidth = 2;
+		ctx.moveTo(50, 200);
+		ctx.lineTo(200,100);
+		ctx.lineTo(350,200);
+		ctx.lineTo(50,200);
+		ctx.fill();
+		ctx.stroke();
+
+	</script>  
+</body>
+</html>

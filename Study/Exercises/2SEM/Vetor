@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class ex1
+{
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		
+		Scanner reader;
+		reader = new Scanner(System.in);
+		int i;
+		int vetor1[] = new int[5];
+		int vetor2[] = new int[5];
+		int vetorR[] = new int[10];
+		
+		//.
+		for (i = 0; i < 5; i++) {
+			
+		System.out.println("Digite o " + (i+1) + "º Valor do vetor1: ");
+		vetor1[i] = reader.nextInt();
+		System.out.println("Digite o " + (i+1) + "º Valor do vetor2: ");
+		vetor2[i] = reader.nextInt();
+		vetorR[2*i] = vetor1[i];
+		vetorR[(2*i)+1] = vetor2[i];
+		
+		
+		}
+		
+		for (i = 0; i < vetorR.length; i++)
+			System.out.println(vetorR[i] + ", ");
+		
+		reader.close();
+	}
+
+}
