@@ -1,43 +1,42 @@
-##### THIS FILE IS BEING CURRENTLY MANAGED BY URXVTCONFIG #####
-##### CHANGES DONE TO THIS FILE MANUALLY MAY AFFECT THE FUNCTIONALITY ######
-##### PROCEED WITH CAUTION! #####
 
 ! special colors
-*.foreground:  #93a1a1
-*.background:  #002b36
-*.cursorColor:  #93a1a1
+*.foreground:  #d8dee8
+*.background:  #2f343f
+*.cursorColor:  #b48ead
 ! black
-*.color0:      #002b36
-*.color8:      #657b83
+*.color0:      #4b5262
+*.color8:      #434a5a
 ! red
-*.color1:      #dc322f
-*.color9:      #dc322f
+*.color1:      #bf616a
+*.color9:      #b3555e
 ! green
-*.color2:      #859900
-*.color10:     #859900
+*.color2:      #a3be8c
+*.color10:     #93ae7c
 ! yellow
-*.color3:      #b58900
-*.color11:     #b58900
+*.color3:      #ebcb8b
+*.color11:     #dbbb7b
 ! blue
-*.color4:      #268bd2
-*.color12:     #268bd2
+*.color4:      #81a1c1
+*.color12:     #7191b1
 ! magenta
-*.color5:      #6c71c4
-*.color13:     #6c71c4
+*.color5:      #b48ead
+*.color13:     #a6809f
 ! cyan
-*.color6:      #2aa198
-*.color14:     #2aa198
+*.color6:      #89d0bA
+*.color14:     #7dbba8
 ! white
-*.color7:      #93a1a1
-*.color15:     #fdf6e3
+*.color7:      #e5e9f0
+*.color15:     #d1d5dc
 
 URxvt*scrollBar:         false
 URxvt*scrollBar_right:   false
+URxvt*internalBorder:	25
 
 URxvt*transparent:       false
 
-URxvt.font: xft:SauceCodePro Nerd Font Mono:pixelsize=12
+URxvt.font: xft:SauceCodePro Nerd Font Mono:pixelsize=14
 URxvt.letterSpace: 0
+URxvt.lineSpace:   0
 
 *antialias:  true
 *autohint:   false
@@ -45,4 +44,11 @@ URxvt.letterSpace: 0
 URxvt.perl-ext-common: default,matcher,clipboard,config-reload
 URxvt.url-launcher: firefox-nightly
 URxvt.matcher.button: 1
+
+!XFT Font Settings
+Xft.autohint: 0
+Xft.lcdfilter: lcddefault
+Xft.hintstyle: hintslight
+Xft.rgba: rgb
+Xft.dpi: 96
 

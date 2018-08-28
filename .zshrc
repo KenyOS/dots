@@ -2,6 +2,7 @@
 alias dots='git --git-dir=$HOME/.dots.git/ --work-tree=$HOME'
 eval $(thefuck --alias --enable-experimental-instant-mode)
 
+
 #zsh config
 
 source /usr/share/zsh/share/antigen.zsh
@@ -37,3 +38,5 @@ export PATH="$NPM_PACKAGES/bin:$PATH"
 # command
 unset MANPATH  # delete if you already modified MANPATH elsewhere in your config
 export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
+
+alias ls='exa --long --header --git'
