@@ -28,17 +28,18 @@
 *.color7:      #e5e9f0
 *.color15:     #d1d5dc
 
+!URxvt.depth: 32
 URxvt*scrollBar:         false
 URxvt*scrollBar_right:   false
 URxvt*internalBorder:	25
 
-URxvt*transparent:       false
+!URxvt*transparent:       false
 
 URxvt.font: xft:SauceCodePro Nerd Font Mono:pixelsize=14
 URxvt.letterSpace: 0
 URxvt.lineSpace:   0
 
-*antialias:  true
+!*antialias:  true
 *autohint:   false
 
 URxvt.perl-ext-common: default,matcher,clipboard,config-reload

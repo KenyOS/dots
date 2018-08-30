@@ -1,4 +1,5 @@
 #============ Alias ==========#
+alias tmux="tmux -2"
 alias dots='git --git-dir=$HOME/.dots.git/ --work-tree=$HOME'
 eval $(thefuck --alias --enable-experimental-instant-mode)
 
