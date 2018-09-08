@@ -1,8 +1,18 @@
 #============ Alias ==========#
+alias rm="rm -r"
+alias systemctl="sudo systemctl"
+alias pacman="sudo pacman"
 alias tmux="tmux -2"
 alias dots='git --git-dir=$HOME/.dots.git/ --work-tree=$HOME'
 eval $(thefuck --alias --enable-experimental-instant-mode)
-
+alias cat=bat
+alias ping='prettyping -nolegend'
+alias preview="fzf --preview 'bat --color \"always\" {}'"
+alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
+alias help='tldr'
+alias sh=fish #change bash to fish
+# add support for ctrl+o to open selected file in VS Code
+export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(code {})+abort'"
 
 #zsh config
 

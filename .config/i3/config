@@ -36,7 +36,9 @@ exec --no-startup-id udiskie -t
 # Keyboard Layout = português
 exec --no-startup-id setxkbmap -model abnt2 -layout br -variant abnt2  
 # Terminal with welcome
-exec --no-startup-id i3-msg 'workspace $WS1; exec urxvt -e tmux && neofetch'
+exec --no-startup-id i3-msg 'workspace $WS1; exec urxvt -e (tmux -c neofetch)'
+#start firefox
+exec --no-startup-id i3-msg 'workspace $WS4; exec env MOZ_USE_OMTC=1 firefox-nightly &'
 #======          =======#
 #=====  SHORTCUTS ======#
 #======          =======#
@@ -209,7 +211,7 @@ exec --no-startup-id start-pulseaudio-x11
 ##       Music server MPD
 #exec --no-startup-id mpd
 #========  Tilda  =======#
-exec --no-startup-id tilda
+#exec --no-startup-id tilda
 ##       Composite manager
 exec --no-startup-id compton -cCGb      
 exec --no-startup-ic xcompmgr -c -t-5 -l-5 -r4.2 -o.55
@@ -224,7 +226,7 @@ exec xautolock -time 10 -locker i3lock-fancy -f noto-sans
 #exec conky -d; sleep 1 && transset-df .5 -n Conky &
 #
 ##		Xresources
-exec --no-startup-id xrdb ~/.Xresources
+#exec --no-startup-id xrdb ~/.Xresources
 #
 ##		Dunst
 ##exec --no-startup-id dunst -config ~/.config/dunst/dunstrc
