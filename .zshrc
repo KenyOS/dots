@@ -1,4 +1,6 @@
 #============ Alias ==========#
+alias unrar="unrar x"
+alias chev="sharenix -m="f" -s="chevereto" -n"
 alias rm="rm -r"
 alias systemctl="sudo systemctl"
 alias pacman="sudo pacman"
